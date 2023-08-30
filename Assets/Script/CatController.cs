@@ -16,7 +16,7 @@ public class CatController : MonoBehaviour
     float shotTimeMin = 0.3f;
     float shotTimeMax = 1f;
 
-    public GameObject bullet;
+    //cat 총알 prefab 변수 선언
 
     private void Start()
     {
@@ -45,12 +45,8 @@ public class CatController : MonoBehaviour
 
     IEnumerator shootBullet()
     {
-        float RandTime = Random.RandomRange(shotTimeMin, shotTimeMax);
-        while(true)
-        {
-            Instantiate(bullet,gameObject.transform.position,gameObject.transform.rotation);
-            yield return new WaitForSeconds(RandTime);
-        }
+        //코드 작성 부분(아래 코드 지워주세요!)
+        yield return null;
         
     }
 }
